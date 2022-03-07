@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive card swiper page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="card-swiper.css">
+</head>
+<body>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="quote.png" class="quote">
+                        <div class="content">
+                            <p>The world as I see it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis tenetur sunt id sed saepe doloremque quae ad? Eaque culpa voluptatem facilis deserunt itaque accusamus veritatis modi velit iure eligendi?</p>    
+                        </div>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="einstein-1.jpeg">
+                            </div>
+                            <h3>Albert Einstein<br><span>physicsist</span></h3>
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis tenetur sunt id sed saepe doloremque quae ad? Eaque culpa voluptatem facilis deserunt itaque accusamus veritatis modi velit iure eligendi?</p>    
+                        </div>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="feynman-1.jpeg">
+                            </div>
+                            <h3>Richard Feynman<br><span>physicist</span></h3>
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="quote.png" class="quote">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis tenetur sunt id sed saepe doloremque quae ad? Eaque culpa voluptatem facilis deserunt itaque accusamus veritatis modi velit iure eligendi?</p>    
+                        </div>
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="dirac-1.jpeg">
+                            </div>
+                            <h3>P. A. M. Dirac<br><span>physicist</span></h3>
+                        </div>
+                    </div> 
+                </div>
+<!--                               
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div> -->
+            </div>
+        
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            // },
+        });
+    </script>
+
+</body>
+</html>
